@@ -18,24 +18,45 @@
 			justify-content: center;
 			flex-flow: column wrap;
 			opacity: 0.9;
+			position: relative;
+ 			overflow: hidden;
+  			padding-top: 2.5%;
 		}
 		.charis-div {
 			background-image: url("Charis.png");
 			background-size: 100% 100%;	
+			display: flex;
+			justify-content: center;
+			flex-flow: column wrap;
 			opacity: 0.9;
+			position: relative;
+ 			overflow: hidden;
+			padding-top: 2.5%;
 
 		}
 		.ichthus-div {
 			background-image: url("Ichthus.png");
 			background-size: 100% 100%;	
-			padding-bottom: 10px;
+			display: flex;
+			justify-content: center;
+			flex-flow: column wrap;
 			opacity: 0.9;
+			position: relative;
+ 			overflow: hidden;
+			padding-top: 2.5%;
+			margin-bottom: 0;
 		}
 		iframe {
 			opacity:  0.8;
 			margin-bottom: 20px;
 			transition: all 1s;
 			align-self: center;
+			position: relative;
+  			top: 0;
+  			left: 0;
+  			width: 60%;
+  			height: auto;
+  			border: 0;
 
 		}
 		iframe:hover {
@@ -90,7 +111,7 @@
 
 		#three {
 			background-color: floralwhite;
-			opacity:  0.85;
+			opacity:  0.65;
 			box-shadow: 2px 2px 2px #888888;
 			border: 1.5px solid ghostwhite;
 			
@@ -111,6 +132,11 @@
 			opacity:  0.7;
 		}
 
+		a:hover {
+			color: rgb(244, 225, 20);
+			opacity: 1;
+		}
+
 		@keyframes grow {
 			from {
 				transform: scale(1);
@@ -123,29 +149,30 @@
 
 		footer {
 			padding-top: 10px;
+			overflow: hidden;
 		}
 
 	</style>
 </head>
 <body>
 	<center>
-			<div class="jovial-div">
-				<h1><mark id="one">Contemporary Eimi Worship Bands</mark></h1>
-				<h2><mark id="two"><a href="https://www.youtube.com/@jovialworship2686" target="_blank">Jovial Worship</a></mark></h2>
-				<iframe class="jovial" width="560" height="315" src="https://www.youtube.com/embed/2bmYS9ymJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="ichthus-div">
-				<h2><mark id="three"><a href="https://www.youtube.com/@ichthusworship4082" target="_blank">Ichthus Worship</a></mark></h2>
-				<iframe class="ichthus" width="560" height="315" src="https://www.youtube.com/embed/WUFF95EdWhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="charis-div">
-				<h2><mark id="four"><a href="https://www.youtube.com/@CharisWorship" target="_blank">Charis Worship</a></mark></h2>
-				<iframe class="charis" width="560" height="315" src="https://www.youtube.com/embed/Jb29HTQJKN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<hr>
-			<footer>
-				<mark id="five">@Copyright 2023</mark>
-			</footer>
-			</div>
-</center>
+	<div class="jovial-div">
+		<center><h1><mark id="one">Contemporary Eimi Worship Bands</mark></h1></center>
+		<h2><mark id="two"><a href="https://www.youtube.com/@jovialworship2686" target="_blank">Jovial Worship</a></mark></h2>
+		<iframe class="jovial" width="560" height="315" src="https://www.youtube.com/embed/2bmYS9ymJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="ichthus-div">
+		<h2><mark id="three"><a href="https://www.youtube.com/@ichthusworship4082" target="_blank">Ichthus Worship</a></mark></h2>
+		<iframe class="ichthus" width="560" height="315" src="https://www.youtube.com/embed/WUFF95EdWhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="charis-div">
+		<h2><mark id="four"><a href="https://www.youtube.com/@CharisWorship" target="_blank">Charis Worship</a></mark></h2>
+		<iframe class="charis" width="560" height="315" src="https://www.youtube.com/embed/Jb29HTQJKN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<hr>
+	<footer>
+		<mark id="five">@Copyright 2023</mark>
+	</footer>
+	</div>
+	</center>
 </body>
 </html>
